@@ -45,6 +45,7 @@ dependencies:
   firebase_database:
   http: ^0.13.0
   provider: ^6.0.2
+  image_picker: ^0.8.5
 
 dev_dependencies:
   flutter_test:
@@ -81,7 +82,7 @@ flutter:
     - assets/images/artificial.png
     - assets/images/gold.png
     - assets/images/silver.png
-
+    - assets/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

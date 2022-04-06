@@ -4,6 +4,8 @@ import 'package:shop_n_preview/Screens/Home/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:camera_deep_ar/camera_deep_ar.dart';
+import 'package:shop_n_preview/Screens/Home/previewitem.dart';
+
 class ProductDetailPage extends StatefulWidget {
   //final String id;
   final String name;
@@ -37,8 +39,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
   int modelPrice;
   int qty = 1;
 
-  static const platform = const
-  MethodChannel('going.native.for.userdata');
+  static const platform = const MethodChannel('going.native.for.userdata');
   String _username = 'Data received: No data';
   String _userId = '1111';
 
@@ -54,12 +55,11 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
     setState(() {
       _username = username;
     });
-
   }
 
   @override
   void initState() {
-   // = price;
+    // = price;
     // TODO: implement initState
     super.initState();
     setState(() {
@@ -76,10 +76,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
     );
   }
 
-
-
   void multiplyPrice(int qty) {
-   modelPrice = qty * widget.price;
+    modelPrice = qty * widget.price;
   }
 
   Widget getBottom() {
@@ -119,8 +117,17 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 minWidth: 192,
                 color: primary,
                 onPressed: () {
-                   _getDataFromAdnroid();
-
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                     return LivePreview(
+                       itemNum: modelPrice,
+                     );
+                    }),
+                    // print(nameController.text);
+                    // print(passwordController.
+                    // text
+                  );
                 },
                 child: Row(
                   children: [
@@ -239,7 +246,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         width: 20,
                       ),
                       Text(
-                       modelPrice.toString() + " pkr",
+                        modelPrice.toString() + " pkr",
                         style: TextStyle(
                             fontSize: 20,
                             height: 1.5,
@@ -404,7 +411,6 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           setState(() {
                             qty = ++qty;
                             multiplyPrice(qty);
-
                           });
                         },
                         child: Container(
