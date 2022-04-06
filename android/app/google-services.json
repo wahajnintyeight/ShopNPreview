@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "720421130231",
+    "firebase_url": "https://jewelry-preview-application-default-rtdb.firebaseio.com",
+    "project_id": "jewelry-preview-application",
+    "storage_bucket": "jewelry-preview-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720421130231:android:1d934ac4ca188cd9d928f2",
+        "android_client_info": {
+          "package_name": "com.example.counter_flutter.host"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720421130231-mo5o49rst8qpfv64t07p5mcdijakbr80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeIKZzwgbXUKUdaNI86IZhjnhOrs-owOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720421130231-mo5o49rst8qpfv64t07p5mcdijakbr80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720421130231:android:fc9c2b3007c8333ad928f2",
+        "android_client_info": {
+          "package_name": "com.example.shopnpreview.shop_n_preview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720421130231-mo5o49rst8qpfv64t07p5mcdijakbr80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeIKZzwgbXUKUdaNI86IZhjnhOrs-owOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720421130231-mo5o49rst8qpfv64t07p5mcdijakbr80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
